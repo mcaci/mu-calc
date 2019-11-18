@@ -4,7 +4,7 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"github.com/mcaci/calc/div/serv"
+	"github.com/mcaci/mu-calc/div/serv"
 	"log"
 	"net/http"
 	"os"

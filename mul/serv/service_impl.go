@@ -3,7 +3,7 @@ package serv
 import (
 	"context"
 
-	"github.com/mcaci/calc/mul/mul"
+	"github.com/mcaci/mu-calc/mul/mul"
 )
 
 type mulService struct{}

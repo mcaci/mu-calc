@@ -3,7 +3,7 @@ package serv
 import (
 	"context"
 
-	"github.com/mcaci/calc/add/add"
+	"github.com/mcaci/mu-calc/add/add"
 )
 
 type addService struct{}

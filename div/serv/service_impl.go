@@ -3,7 +3,7 @@ package serv
 import (
 	"context"
 
-	"github.com/mcaci/calc/div/div"
+	"github.com/mcaci/mu-calc/div/div"
 )
 
 type divService struct{}

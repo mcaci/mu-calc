@@ -3,7 +3,7 @@ package serv
 import (
 	"context"
 
-	"github.com/mcaci/calc/sub/sub"
+	"github.com/mcaci/mu-calc/sub/sub"
 )
 
 type subService struct{}
