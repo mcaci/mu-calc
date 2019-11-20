@@ -1,4 +1,4 @@
-# Fibonacci microservice
+# Sub microservice
 
 ## Direct usage
 
@@ -10,22 +10,22 @@ go run main.go
 
  * On a separate terminal page
 ```shell
-curl -XPOST -d '{"n":4}' http://localhost:8080/fibonacci
+curl -XPOST -d '{"a":4, "b":5}' http://localhost:8080/sub
 ```
-Where `n` has any int value
+Where `a` and `b` have any int value
 
 ## Usage via docker
 
 * On one terminal page
 ```shell
-docker build -t mcaci/fibonacci-service . 
+docker build -t mu-sub . 
 # Any other tag will do inside docker build but must be the same used in docker run
-docker run --rm -p 4000:8080 mcaci/fibonacci-service
+docker run --rm -p 4000:8080 mcaci/mu-sub
 ```
 * On a separate terminal page
 ```shell
-curl -XPOST -d '{"n":4}' http://localhost:4000/fibonacci
+curl -XPOST -d '{"a":4, "b":5}' http://localhost:8080/sub
 ```
-Where `n` has any int value
+Where `a` and `b` have any int value
 
 For now `Ctrl + C` doesn't work so the `docker run` command must be killed manually until I find a better solution
